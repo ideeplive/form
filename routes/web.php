@@ -11,9 +11,10 @@ use App\Http\Controllers\RegistrationController;
 // Route::post('/', [RegistrationController::class, 'signup']);
 
 
-// Route::get('/', [RegistrationController::class, 'showform']);
-// Route::post('/', [RegistrationController::class, 'signup']);
+Route::get('/', [RegistrationController::class, 'showform']);
+Route::post('/', [RegistrationController::class, 'signup']);
 
+Route::view('olddata', 'olddata')->name('old');
 
 
 
